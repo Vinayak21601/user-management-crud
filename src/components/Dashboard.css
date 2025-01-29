@@ -1,0 +1,47 @@
+.dashboard {
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.dashboard p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Stats Container for the Cards */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #81b1ce;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  background-color: #34495e;
+}
