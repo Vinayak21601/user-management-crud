@@ -56,3 +56,154 @@ Ensure the backend API is running and accessible for the front-end to work prope
 
 Conclusion 🎉
 This user management system is a simple and efficient way to view, edit, and delete user data. ✅
+
+
+
+
+GitHub Usage Guide for the Project
+
+This document provides a step-by-step guide on how to use GitHub for this project, including cloning, making changes, and pushing updates.
+
+Prerequisites
+
+Install Git on your system.
+
+A GitHub account.
+
+1. Clone the Repository
+
+To get a local copy of the project, run:
+
+# Clone via HTTPS
+git clone https://github.com/your-username/your-repository.git
+
+# OR Clone via SSH
+git clone git@github.com:your-username/your-repository.git
+
+Navigate into the project directory:
+
+
+2. Configure Git (If Not Done Already)
+
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+3. Create a New Branch (Optional but Recommended)
+
+To work on a new feature or fix a bug, create a new branch:
+
+git checkout -b feature-branch-name
+
+After creating a branch, verify with:
+
+git branch
+
+4. Make Changes and Commit
+
+After modifying files, add changes to staging:
+
+git add .  # Adds all changed files
+
+Commit the changes with a meaningful message:
+
+git commit -m "Your commit message here"
+
+5. Push Changes to GitHub
+
+If you are working on a branch:
+
+git push origin feature-branch-name
+
+If you are working on the main branch:
+
+git push origin main
+
+6. Pull Latest Changes from GitHub
+
+Before making any changes, ensure your local repository is up to date:
+
+git pull origin main  # Or git pull origin your-branch-name
+
+If there are conflicts, resolve them manually before committing again.
+
+7. Create a Pull Request (PR)
+
+Go to your repository on GitHub.
+
+Click on Pull Requests > New Pull Request.
+
+Select your branch and compare it with main.
+
+Add a title and description for your changes.
+
+Click Create Pull Request.
+
+Once reviewed and approved, merge the PR.
+
+8. Sync Your Local Repository After PR Merge
+
+If your PR is merged into main, update your local copy:
+
+git checkout main  # Switch to main branch
+git pull origin main  # Get the latest changes
+git branch -d feature-branch-name  # Delete the old branch locally
+
+9. Handling Merge Conflicts
+
+If you encounter merge conflicts while pulling:
+
+git pull origin main
+
+Manually resolve conflicts in the affected files, then:
+
+git add .
+git commit -m "Resolved merge conflicts"
+git push origin feature-branch-name
+
+10. Contributing to the Project
+
+Follow proper branching strategy (feature/branch-name for features, bugfix/branch-name for bug fixes, etc.).
+
+Write meaningful commit messages.
+
+Keep your changes concise and documented.
+
+Always pull the latest changes before starting new work.
+
+Common Git Commands
+
+Command
+
+Description
+
+git clone <repo-url>
+
+Clone the repository
+
+git status
+
+Check the status of changes
+
+git add .
+
+Stage all changes
+
+git commit -m "message"
+
+Commit changes
+
+git pull origin main
+
+Pull latest changes from remote
+
+git push origin branch-name
+
+Push changes to remote
+
+git checkout branch-name
+
+Switch branches
+
+git branch -d branch-name
+
+Delete a local branch
